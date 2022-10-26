@@ -13,8 +13,8 @@ CHAR [^\"^\\]
 \] { return TOKEN_RIGHT_BRACKET; }
 : { return TOKEN_COLON; }
 , { return TOKEN_COMMA; }
-. { return TOKEN_ERROR; }
 (true|TRUE) { return TOKEN_TRUE; }
 (false|FALSE) { return TOKEN_FALSE; }
+. { return TOKEN_ERROR; }
 %%
 int yywrap() { return 1; }

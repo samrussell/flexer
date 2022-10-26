@@ -363,10 +363,10 @@ struct yy_trans_info
 	};
 static const flex_int16_t yy_accept[35] =
     {   0,
-        0,    0,   14,   10,    1,    1,   10,    9,    3,    8,
-       10,   10,    6,    7,   10,   10,    4,    5,    0,    2,
+        0,    0,   14,   12,    1,    1,   12,    9,    3,    8,
+       12,   12,    6,    7,   12,   12,    4,    5,    0,    2,
         3,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-       11,    0,   12,    0
+       10,    0,   11,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
@@ -792,17 +792,17 @@ YY_RULE_SETUP
 case 10:
 YY_RULE_SETUP
 #line 16 "scanner.flex"
-{ return TOKEN_ERROR; }
+{ return TOKEN_TRUE; }
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
 #line 17 "scanner.flex"
-{ return TOKEN_TRUE; }
+{ return TOKEN_FALSE; }
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
 #line 18 "scanner.flex"
-{ return TOKEN_FALSE; }
+{ return TOKEN_ERROR; }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
